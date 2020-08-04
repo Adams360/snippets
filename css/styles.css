@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-light: #fff;
+    --color-cta  : rgba(65, 105, 225, .6);
+}
+
+body {
+    font-family: sans-serif;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.cta {
+    color: var(--color-cta);
+    display: inline-block;
+    padding: 3em;
+    text-align: center;
+    border-color: var(--color-cta);
+    border-width: 4px 0;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 400px;
+    margin: 3em;
+
+}
+.cta .cta__msg {
+    font-size: 25px;
+    flex-basis: 100%;
+}
+.cta .cta__link {
+    flex-basis: 100%;
+    text-decoration: none;
+    color: inherit;
+    background-color: lightslategray;
+    color: var(--color-light);
+    padding: 1em;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta .cta__link .cta--img {
+    display: block;
+    background-color: var(--color-cta);
+    padding: 1em;
+}
+.cta .cta__link .cta--img img {
+    display: block;
+    width: 100%;
+ 
+    margin: 0 auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.cta .cta__link .cta--text {
+    display: block;
+    background-color: var(--color-cta);
+    padding: 1em;
+}
